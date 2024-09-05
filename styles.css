@@ -1,0 +1,248 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end; /* Align items at the bottom of the header */
+    background-color: #1F1F1F;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 20px; /* Space between logo and navigation */
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    align-items: flex-end; /* Align items at the bottom of the nav area */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+#dark-mode-toggle {
+    background-color: #FFD700;
+    border: none;
+    color: #1F1F1F;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #FFB000;
+}
+
+#dark-mode-toggle .mode-icon {
+    margin-right: 8px;
+}
+
+/* Banner section styling */
+#banner {
+    background-color: #F8F8F8;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #202020;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.3rem;
+}
+
+/* Information section styling */
+.info-section {
+    padding: 80px 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #202020;
+}
+
+.info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.image-placeholder {
+    background-color: #E0E0E0;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Decorated rule */
+.decorated-rule {
+    width: 80px;
+    height: 3px;
+    background-color: #FFD700;
+    margin: 20px auto;
+    border-radius: 3px;
+}
+
+/* Feature section styling */
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.feature-item {
+    background-color: #FAFAFA;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+}
+
+/* Coming Soon Section */
+.coming-soon {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    color: #FFD700;
+    position: relative;
+}
+
+.coming-soon .dots {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 20% {
+        opacity: 1;
+    }
+    40%, 60% {
+        opacity: 0;
+    }
+    80%, 100% {
+        opacity: 1;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #0D0D0D;
+}
+
+body.dark-mode .banner-content {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .info-section {
+    background-color: #141414;
+}
+
+/* Ensure all text is white in dark mode */
+body.dark-mode,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode .feature-item h3,
+body.dark-mode .feature-item p {
+    color: #FFFFFF;
+}
+
+body.dark-mode .feature-item {
+    background-color: #1C1C1C;
+}
+
+body.dark-mode nav ul li a {
+    color: #FFD700;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background-color: #FFB000;
+    color: #FFFFFF;
+}
