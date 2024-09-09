@@ -3,36 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Qbot</title>
+    <title>Contact Us - QBot</title>
     <link rel="stylesheet" href="styles-contact.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1><a href="index.html">Qbot</a></h1>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">About Us</a></li>
-                    <li><a href="contact.html" class="active">Contact Us</a></li>
-                </ul>
-            </nav>
-            <button id="mode-toggle" class="toggle-btn">&#9728; Dark Mode</button>
+    <nav>
+        <div class="logo">
+            <a href="index.html">QBot</a>
         </div>
-    </header>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <button class="mode-btn" id="darkModeToggle">Dark Mode 🌑</button>
+    </nav>
 
-    <main>
-        <section class="contact-info">
-            <h2>We'd Love to Hear From You!</h2>
-            <p>If you have any questions, suggestions, or just want to say hello, feel free to reach out to us at:</p>
-            <p class="email"><a href="mailto:qbothelp@gmail.com">qbothelp@gmail.com</a></p>
-        </section>
-
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="post">
+    <section class="contact-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Feel free to reach out to us. We'd love to hear from you!</p>
+            <form action="mailto:qbothelp@gmail.com" method="post" enctype="text/plain">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -42,10 +33,14 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <button type="submit">Send</button>
+                <input type="submit" value="Send Message" class="submit-btn">
             </form>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 QBot. All Rights Reserved.</p>
+    </footer>
 
     <script src="script-contact.js"></script>
 </body>
