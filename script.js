@@ -8,6 +8,6 @@ darkModeToggle.addEventListener('click', () => {
     if (document.body.classList.contains('dark-mode')) {
         darkModeToggle.innerHTML = '<span class="mode-icon">☀️</span> Light Mode';
     } else {
-        darkModeToggle.innerHTML = '<span class="mode-icon">🌙</span> Dark Mode';
+        darkModeToggle.innerHTML = '<span class="mode-icon">🌑</span> Dark Mode';
     }
 });
