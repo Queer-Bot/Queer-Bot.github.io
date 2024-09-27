@@ -28,7 +28,7 @@ darkModeToggle.addEventListener('click', () => {
     };
 
     // Send the email using EmailJS
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
+    emailjs.send("service_smp4sw4", "template_fjf0snb", formData)
       .then(function(response) {
         alert('Email sent successfully!');
       }, function(error) {
