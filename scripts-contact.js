@@ -11,7 +11,7 @@ darkModeToggle.addEventListener('click', () => {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // prevent the form from submitting
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    emailjs.sendForm('service_smp4sw4', 'template_fjf0snb', this)
         .then(function(response) {
            console.log('SUCCESS!', response.status, response.text);
            alert('Message sent successfully!');
